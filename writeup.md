@@ -69,7 +69,8 @@ My goal is to measure the curvature of the lane lines.
 To reach that goal I first have to warp the undistorted images to birds-eye-view.  
 The pipeline includes the following steps:  
 1. Choose four points on original image (-> source points `src`)
-2. Determine four points for the transformed image (-> destination points `dst`)
+2. Determine four points for the transformed image (-> destination points `dst`)  
+
 |src points  | dst points |
 |:-----------|:-----------|
 |(579, 460)  |(320,   0)  |
@@ -195,6 +196,7 @@ I used the pipeline on the video `project_video.mp4`. Here's a [link to my video
 
 Here is how I modified the pipline in order to get an accetable result on the `challenge_video.mp4`:  
 - Update the source points to destination points mapping:  
+
 |dst       |src       |
 |:--------:|:--------:|
 |(320,   0)|(625, 490)|
